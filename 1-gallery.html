@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,6 +8,42 @@
   </head>
   <body>
     <ul class="gallery"></ul>
+    <li class="gallery-item">
+      <a class="gallery-link" href="large-image.jpg">
+        <img
+          class="gallery-image"
+          src="small-image.jpg"
+          alt="Image description"
+        />
+      </a>
+    </li>
+    <script type="module" src="./js/1-gallery.js" defer></script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SimpleLightbox Gallery</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="node_modules/simplelightbox/dist/simplelightbox.min.css"
+    />
+  </head>
+  <body>
+    <ul class="gallery">
+      <li class="gallery-item">
+        <a class="gallery-link" href="large-image.jpg">
+          <img
+            class="gallery-image"
+            src="small-image.jpg"
+            alt="Image description"
+          />
+        </a>
+      </li>
+    </ul>
 
     <script type="module" src="./js/1-gallery.js" defer></script>
   </body>
