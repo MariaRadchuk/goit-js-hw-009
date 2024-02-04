@@ -1,10 +1,3 @@
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
-
-document.addEventListener('DOMContentLoaded', () => {
-  const galleryContainer = document.querySelector('.gallery');
-  const lightbox = new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250 });
-
 const images = [
   {
     preview:
@@ -71,6 +64,14 @@ const images = [
   },
 ];
 
+
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
+
+document.addEventListener('DOMContentLoaded', () => {
+  const galleryContainer = document.querySelector('.gallery');
+
+
   images.forEach((image) => {
     const item = document.createElement('li');
     item.classList.add('gallery-item');
@@ -88,6 +89,10 @@ const images = [
     item.appendChild(link);
     galleryContainer.appendChild(item);
   });
+
+
+  const lightbox = new SimpleLightbox('.gallery a', {
+    captionsData: 'alt',
+    captionDelay: 250,
+  });
 });
-
-
